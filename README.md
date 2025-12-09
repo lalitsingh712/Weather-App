@@ -1,4 +1,4 @@
-🌦️ Weather Repo
+#🌦️ Weather Repo
 
 A simple and efficient Weather Forecasting Application built using Java and Spring Boot.
 This project fetches real-time weather information using an external API and exposes clean REST endpoints.
