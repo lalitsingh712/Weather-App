@@ -36,7 +36,7 @@ src/
 
 ▶️ How to Run the Project
 1. Clone the Repository
-git clone https://github.com/your-username/Weather-Repo.git
+git clone https://github.com/lalitsingh712/Weather-App.git
 cd Weather-Repo
 
 2. Add Your API Key
