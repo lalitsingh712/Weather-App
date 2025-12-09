@@ -1,19 +1,15 @@
-#🌦️ Weather Repo
+🌦️ Weather Repo — Spring Boot Weather Application
 
-A simple and efficient Weather Forecasting Application built using Java and Spring Boot.
-This project fetches real-time weather information using an external API and exposes clean REST endpoints.
+A clean and efficient Weather Forecasting Application built using Java + Spring Boot.
+This project fetches real-time weather data from an external API and exposes clean REST endpoints for use in any backend or frontend app.
 
 🚀 Features
 
-🌤️ Fetch current weather for any city
-
-⚡ Fast and lightweight Spring Boot backend
-
+✨ Get current weather for any city
+⚡ Fast & lightweight Spring Boot backend
 🔧 Clean REST API architecture
-
-📦 Beginner-friendly project structure
-
-🌐 Easily extendable for weekly forecast or UI integration
+📦 Beginner-friendly layered structure
+🛡 Error handling & clean JSON responses
 
 🛠 Tech Stack
 
@@ -25,50 +21,48 @@ REST API
 
 Maven
 
-JSON Parsing (Jackson)
+Jackson JSON Parser
+
+External Weather API
 
 📁 Project Structure
 src/
  ├─ main/java/com/example/weather
- │   ├─ controller
- │   ├─ service
- │   └─ model
+ │     ├─ controller      → REST endpoints
+ │     ├─ service         → Weather fetching logic
+ │     └─ model           → Response models
  └─ main/resources
-     └─ application.properties
+        └─ application.properties
 
 ▶️ How to Run the Project
 1. Clone the Repository
 git clone https://github.com/your-username/Weather-Repo.git
 cd Weather-Repo
 
-2. Configure Weather API Key
+2. Add Your API Key
 
-Add the API key in application.properties:
+application.properties me add karein:
 
 weather.api.key=YOUR_API_KEY
 
-3. Run the App
+3. Run the Application
 
 Using Maven:
 
 mvn spring-boot:run
 
 
-Or run the WeatherApplication.java file directly from IntelliJ.
+OR
+Directly run the WeatherApplication.java from your IDE.
 
-📡 Example API Endpoint
-
-Get weather info:
-
+📡 API Endpoint
+Get current weather for a city
 GET /api/weather/{city}
 
-
-Response example:
-
+Example Response
 {
   "city": "Delhi",
   "temperature": "24°C",
   "description": "Clear Sky",
   "humidity": "42%"
 }
-
